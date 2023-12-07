@@ -1,0 +1,26 @@
+[project]
+name = "ruff_demo"
+description = "Ruff demo for gulag"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.mypy]
+strict = true
+
+[tool.coverage.run]
+parallel = true
+source = [
+    "tests"
+]
+context = '${CONTEXT}'
+
+[tool.ruff]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+    "UP",  # pyupgrade
+]
