@@ -57,10 +57,10 @@ repos:
 
 - repo: local
   hooks:
-  - id: pytest-check
+  - id: pytest-cov
     language: system
-    name: pytest-check
-    entry: pytest
+    name: pytest-cov
+    entry: coverage run -m pytest tests
     pass_filenames: false
     always_run: true
 
