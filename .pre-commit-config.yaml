@@ -63,3 +63,13 @@ repos:
     entry: pytest
     pass_filenames: false
     always_run: true
+
+
+- repo: local
+  hooks:
+  - id: mutmut-check
+    language: system
+    name: mutmut-check
+    entry: mutmut run --paths-to-mutate "src/" --tests-dir "tests/"
+    pass_filenames: false
+    always_run: true
