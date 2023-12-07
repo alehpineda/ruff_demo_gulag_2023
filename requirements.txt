@@ -1,0 +1,8 @@
+ruff
+mypy
+pre-commit
+black
+flake8
+pylint
+pytest
+isort
