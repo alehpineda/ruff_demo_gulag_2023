@@ -13,3 +13,15 @@ def sum_even_numbers(numbers: Iterable[int]) -> int:
         int: The sum of ints
     """
     return sum(num for num in numbers if num % 2 == 0)
+
+
+def sum_odd_numbers(numbers: Iterable[int]) -> int:
+    """Sum odd numbers
+
+    Args:
+        numbers (Iterative[int]): And iterative of ints
+
+    Returns:
+        int: The sum of ints
+    """
+    return sum(num for num in numbers if num % 2 == 1)
